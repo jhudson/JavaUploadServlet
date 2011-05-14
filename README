@@ -1,6 +1,6 @@
 Very simple Java upload servlet. Source from http://www.servletworld.com/servlet-tutorials/servlet-file-upload-example.html
 
-This is not built on Servlet 3.0 and can be used in most java containers.
+**This is not built on Servlet 3.0 and can be used in most java containers.
 
 To build:
 
