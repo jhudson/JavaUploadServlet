@@ -19,7 +19,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
 public class UploadServlet extends HttpServlet {
   private static final long serialVersionUID = 1L;
-  private static final String TMP_DIR_PATH = "c:\\tmp";
+  private static final String TMP_DIR_PATH = "/temp";
   private File tmpDir;
   private static final String DESTINATION_DIR_PATH = "/files";
   private File destinationDir;
