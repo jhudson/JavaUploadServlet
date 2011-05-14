@@ -1,3 +1,34 @@
- very simple Java upload servlet. Taken from http://www.servletworld.com/servlet-tutorials/servlet-file-upload-example.html
+Very simple Java upload servlet. Source from http://www.servletworld.com/servlet-tutorials/servlet-file-upload-example.html
 
-This is not built on Servlet 3.0 and can be used in most java containers
+This is not built on Servlet 3.0 and can be used in most java containers.
+
+To build:
+
+1. get source
+2. get Maven
+3. navigate to source top level directory
+4. run 'mvn install' from command line
+5. build will be in target/JavaUploadServlet.jar
+6. add to you projects web.xml:
+
+        <servlet>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+7. test page
+
+        <html>
+	    <head></head>
+	    <body>
+		<p>Commons File Upload Example</p>
+		<form action="Commonsfileuploadservlet" enctype="multipart/form-data" method="POST">
+			<input type="file" name="file1"><br>
+			<input type="Submit" value="Upload File"><br>
+		</form>
+	    </body>
+        </html>
