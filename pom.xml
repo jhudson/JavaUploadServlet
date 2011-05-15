@@ -4,7 +4,7 @@
   <groupId>org.jhudson</groupId>
   <artifactId>JavaUploadServlet</artifactId>
   <packaging>jar</packaging>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.3-SNAPSHOT</version>
   <name>JavaUploadServlet</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -15,22 +15,15 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>commons-fileupload</groupId>
-      <artifactId>commons-fileupload</artifactId>
-      <version>1.2.2</version>
-      <scope>compile</scope>
-    </dependency>
-    <dependency>
-      <groupId>HTTPClient</groupId>
-      <artifactId>HTTPClient</artifactId>
-      <version>0.3-3</version>
-      <scope>compile</scope>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.0.1</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
       <version>2.5</version>
-      <scope>compile</scope>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 </project>
